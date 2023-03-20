@@ -3,13 +3,14 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
+    block-size: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    
-    font-family: 'Poppins', sans-serif;
-
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
     background-color: #4e5768;
 }
 
@@ -35,7 +36,7 @@ header {
 
 .navbar a {
     color: white;
-    align-self: center;
+    
 
 }
 
@@ -67,12 +68,11 @@ header {
   
 .nav__links li a {
     transition: color 0.3s ease 0s;
-
 }
 
-.nav__links li a :hover {
+.nav__links a:hover {
     color: #0088a9;
-    align-self: center;
+    
 }
 
 
@@ -89,7 +89,7 @@ header {
 }
 
 .cssbuttons-io-button {
-  background: #A370F0;
+  background: #0088a9;
   color: black;
   font-family: inherit;
   padding: 0.35em;
@@ -101,11 +101,12 @@ header {
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  box-shadow: inset 0 0 1.6em -0.6em #0088a9;
   overflow: hidden;
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
+  cursor: pointer;
 }
 
 .cssbuttons-io-button .icon {
@@ -118,7 +119,7 @@ header {
   height: 2.2em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #0088a9;
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -130,7 +131,7 @@ header {
 .cssbuttons-io-button .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: #7b52b9;
+  color: #0088a9;
 }
 
 .cssbuttons-io-button:hover .icon svg {
