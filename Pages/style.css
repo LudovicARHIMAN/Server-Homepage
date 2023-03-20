@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #4e5768;
+}
+
+header {
+    height: 100vh ;
+    width: 100vw ;
+    background-color: #4e5768;
+
+}
+
+.navbar {
+    position: absolute ;
+    padding: 50px ;
+    display: flex ;
+    justify-content: space-between ;
+    width: 100% ;
+    box-sizing: border-box ;
+    background-color: #24252a;
+    align-items: center;
+    margin: auto;
+
+}
+
+.navbar a {
+    color: white;
+    align-self: center;
+
+}
+
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+.navbar .nav-links ul li {
+    margin: 0 25px;
+    
+}
+  
+.nav__links li a {
+    transition: color 0.3s ease 0s;
+
+}
+
+.nav__links li a :hover {
+    color: #0088a9;
+    align-self: center;
+}
+
+
+
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+
+
+}
+
+.cssbuttons-io-button {
+  background: #A370F0;
+  color: black;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+ 
+ 
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        padding: 0;
+    }
+    
+    
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #0087a917;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+        
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins&display=swap');

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse's Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/tabs">
+    <script src="https://kit.fontawesome.com/a2498ab3fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">REVERSE'S SERVER</a>
+        <div class="nav-links">
+            <ul class="nav__links">
+                <li><a href="https://openvpn.net/">Open VPN</a></li>
+                <li><a href="https://owncloud.com/">Owncloud</a></li>
+                
+                <li><button class="cssbuttons-io-button"> LOGIN
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                  </button>
+                </li>
+            </ul>
+            
+        </div>
+        <img src="images/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">   
+    </nav> 
+</body>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
